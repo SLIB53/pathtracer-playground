@@ -105,6 +105,8 @@ def main():
         ("#3C3836", "bright white"),
     ]
 
+    assert(len(palette) == 16)
+
     print("inline constexpr std::array<color, 16> base16_palette{")
     for index, (hex_parsed, label) in enumerate(
         (parse_hex(hex_token), label) for (hex_token, label) in palette
